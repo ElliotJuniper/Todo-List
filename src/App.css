@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    background-color: lightblue;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    /* border: solid black; */
+    font-family: 'Roboto', sans-serif;
+}
+
+.addTask{
+    font-family: 'Roboto', sans-serif;
+    background-color: darkslategray;
+    color: white;
+    border-color: white;
+}
+
+
+.check {
+    display: flex;
+    justify-content: center;
+    border: solid white;
+    color: green;
+    font-size: 38px;
+    background-color: darkslategray;
+    margin: 5px;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.delete {
+    display: flex;
+    justify-content: center;
+    border: solid red;
+    color: red;
+    font-size: 40px;  
+    font-weight: bold;  
+    background-color: darkslategray;
+    margin: 5px;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* .buttons{
+    display: flex;
+    justify-content: center;
+
+} */
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    border: solid white;
+    margin: 10px;
+    border-radius: 25px;
+}
