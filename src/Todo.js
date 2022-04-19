@@ -20,11 +20,11 @@ const Todo = () => {
         array.splice(index, 1);
         setTasks(array)
     }
-    // const checkTasks = (index) => {
-    //     let array = [...tasks];
-    //     array(index)               
-    //     setColor(array)
-    // }
+    const checkTasks = (index) => {
+        let array = [...tasks];
+        array(index)               
+        setColor(array)
+    }
 
     return (
         <div>
@@ -35,21 +35,21 @@ const Todo = () => {
             {tasks.map((item, index) => {
                 return (
                 <div className="container">
-                {/* <button className="check" onClick={checkTasks}
+                <button className="check" onClick={() => checkTasks(index)}
                 style={{
                 color:color ? 'red':'green'
             // color:border ? 'red':'green'
             }}
 
-                    >✔</button>  */}
-                <button className="check" onClick={() => setColor(!color)}
+                    >✔</button> 
+                {/* <button className="check" onClick={() => setColor(!color)}
                 style={
                     {
                     color:color ? 'red':'green'
                     // color:border ? 'red':'green'
                     }
                     }
-                >✔</button>
+                >✔</button> */}
                 <h2>{item}</h2>
                 <button className="delete" onClick={() => removeTasks(index)}>X</button>
                 </div>)
