@@ -4,7 +4,7 @@ import './App.css'
 const Todo = () => {
     const [tasks, setTasks] = useState([])
     const [input, setInput] = useState("")
-    const [done, setDone] = useState(false)
+    const [done, setDone] = useState(false);
 
     const updateInput = (event) => {
         setInput(event.target.value)
@@ -32,6 +32,9 @@ const Todo = () => {
             <input className="addTask1" value={input} onChange={updateInput}/>
             <button className="addTask" onClick={addTask}>Add Task</button>
 
+
+
+
             {tasks.map((item, index) => {
                 return (
                 <div className="container">
@@ -41,9 +44,9 @@ const Todo = () => {
                         </h1>
                     ) : (
                         <h1>{item}</h1>
-                    )}
-                    <button className="check" onClick={() => setDone(true)}>✔</button>
-                    <button className="delete" onClick={() => removeTasks(index)}>X</button>
+                        )}
+                        <button className="check" onClick={() => setDone(true)}>✔</button>
+                        <button className="delete" onClick={() => removeTasks(index)}>X</button>
                     </div>)
                 {/* <button className="check" onClick={() => checkTasks(index)}
                 style={{
@@ -61,7 +64,8 @@ const Todo = () => {
                     }
                 >✔</button> */}
                  {/* <h2>{item}</h2> */}
-            })}
+            }
+            )}
             </div>   
             )}
             
